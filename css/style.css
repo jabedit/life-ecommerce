@@ -44,7 +44,17 @@ button{
     font-weight: 700;
     text-transform: capitalize;
     border-radius: 5px;
+    outline: none;
     
+}
+.star i{
+    color: goldenrod;
+    font-size: 0.8rem;
+}
+hr{
+    height: 2px;
+    width: 40px;
+    background-color: #fb774b
 }
 
 /* Header section  */
@@ -191,3 +201,47 @@ button{
     text-align: end;
 }
 
+/* Product section Styesheets */
+
+.products{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.products img{
+    transition: .3s all;
+}
+.products:hover img{
+    opacity: 0.7;
+}
+.products .btn-buy{
+    background-color:#fb774b ;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .3s;
+    outline: none;
+    border: none;
+
+}
+.products:hover .btn-buy{
+    transform: translateY(0);
+    opacity: 1;
+    
+
+}
+
+/* Parallax banner */
+#parallx-banner{
+    background-image: url('../images/banner/parallax.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top 70px center ;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+}
