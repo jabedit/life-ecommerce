@@ -129,3 +129,65 @@ button{
 #home span{
     color: coral;
 }
+
+/* New section  */
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(241, 147, 113, 0.226);
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background:none;
+    text-transform: uppercase;
+    padding: 2.5px;
+    border-bottom: 1px solid #2a2a2a;
+    transform: translateY(70px);
+    transition: .3s;
+
+}
+#new .one .details button:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-start;
+    text-align: start;}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: flex-end;
+    text-align: end;
+}
+
